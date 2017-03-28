@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 466406199
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: gui/panel
+      Dependencies: {}
+    Info_1:
+      Name: gui/cube
+      Dependencies: {}

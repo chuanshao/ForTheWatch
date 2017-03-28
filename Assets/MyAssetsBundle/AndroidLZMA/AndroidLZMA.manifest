@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 1750587802
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: gui/panel
+      Dependencies: {}
+    Info_1:
+      Name: gui/cube
+      Dependencies:
+        Dependency_0: material/test.high
+    Info_2:
+      Name: material/test.high
+      Dependencies: {}

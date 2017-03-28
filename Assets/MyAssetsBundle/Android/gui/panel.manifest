@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 518850112
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f34c6b69377013f82be2e0297a92580c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 932e11171d0d86d90823cc10f83c344e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d337367816e8e324b9cd5977ebc6338a, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/MyAssetsBundle/Android/Android.manifest
+- Assets/MyAssetsBundle/Android/gui/cube
+- Assets/MyAssetsBundle/Android/material/test
+- Assets/MyAssetsBundle/Android/material/test.high
+- Assets/Resources/Panel.prefab
+- Assets/MyAssetsBundle/Android/gui/cube.manifest
+- Assets/MyAssetsBundle/Android/Android
+- Assets/MyAssetsBundle/Android/gui/panel.manifest
+- Assets/MyAssetsBundle/Android/material/test.high.manifest
+- Assets/MyAssetsBundle/Android/material/test.manifest
+- Assets/MyAssetsBundle/Android/gui/panel
+Dependencies: []

@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 4097708334
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a86dc165bbc0aff4f0a931d987c1c127
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 83ea34cb7db24f35c82319d866a7b7c6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/Cube.prefab
+Dependencies:
+- E:/workSpace/ForTheWatch/Assets/MyAssetsBundle/AndroidLZMA/material/test.high
