@@ -21,7 +21,7 @@ public class TSWPrompt
     {
         this._setting = setting;
     }
-    public List<Puke> GetPrompt(List<TSWPuke> myPukes , List<TSWPuke> upPukes)
+    public List<int> GetPrompt(List<TSWPuke> myPukes , List<TSWPuke> upPukes)
     {
         if (upPukes == null || upPukes.Count == 0)
         {
@@ -39,16 +39,16 @@ public class TSWPrompt
         }
         return null;
     }
-    List<Puke> GetTractor(List<TSWPuke> myPukes, List<TSWPuke> upPukes)
+	List<int> GetTractor(List<TSWPuke> myPukes, List<TSWPuke> upPukes)
     {
-        
+		return null;
     }
     /// <summary>
     /// 获取类型
     /// </summary>
     /// <param name="upPukes"></param>
     /// <returns></returns>
-    PlayCardType GetPukeType(List<TSWPuke> upPukes)
+    public PlayCardType GetPukeType(List<TSWPuke> upPukes)
     {
         if (upPukes == null || upPukes.Count == 0)
         {
