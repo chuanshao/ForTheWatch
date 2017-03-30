@@ -2,31 +2,32 @@
 using System.Collections.Generic;
 public class TSWRule : BaseRule
 {
-	private Player _me;
+	private TSWPlayer _me;
 	private TSWSetting _setting;
 	private TSWPrompt _prompt; //提示器
-	private List<TSWPuke> _minePukes;
 	private CardRecorder _recorder;//记牌器
-	public TSWRule (List<TSWPuke> minePukes , CardRecorder recorder)
+	private TSWPlayCardRule _playCardRule;
+	public TSWRule ( CardRecorder recorder)
 	{
-		this._minePukes = minePukes;
 		this._recorder = recorder;
 	}
 	public override void Setting (WData setting)
 	{
 		this._setting = (TSWSetting)setting;
 	}
-	public override bool ComplianceRule (List<Puke> playingCards)
+	public override bool ComplianceRule (Player first , List<Puke> playingCards)
 	{
-		return false;
+		PlayCardType type = _prompt.GetPukeType (playingCards);
+		TSWPlayedCard cards = new TSWPlayedCard ();
+		cards.PType = type;
+		return this._playCardRule.ComplianceRule (this._me, (first as TSWPlayer), cards, this._setting);
 	}
 	public override void PlayingCards (Player player , List<Puke> playingCards)
 	{
-		List<TSWPuke> tswPukes = playingCards.ConvertAll<TSWPuke> (input => input as TSWPuke);
-		PlayCardType type = _prompt.GetPukeType (tswPukes);
+		PlayCardType type = _prompt.GetPukeType (playingCards);
 		TSWPlayedCard cards = new TSWPlayedCard ();
 		cards.PType = type;
-		_recorder.PlayingPuke (player.GetPos(), cards);
+		this._recorder.PlayingPuke (player.GetPos(), cards);
 	}
 	public override bool IsOver ()
 	{
@@ -39,9 +40,9 @@ public class TSWRule : BaseRule
 	public override List<int> GetPrompt ()
 	{
 		Player upPlayer = this._me.GetUpPlayer ();
-		List<TSWPuke> minePukes = this._me.GetPukes().ConvertAll<TSWPuke> (input => input as TSWPuke);
+		List<Puke> minePukes = this._me.GetPukes();
 		PlayedCard pc = _recorder.GetPlayerLastCard (upPlayer.GetUpPlayer ().GetPos ());
-		List<TSWPuke> upPukes = pc.PlayedPukes.ConvertAll<TSWPuke> (input => input as TSWPuke);
+		List<Puke> upPukes = pc.PlayedPukes;
 		return _prompt.GetPrompt (minePukes , upPukes);
 	}
 }

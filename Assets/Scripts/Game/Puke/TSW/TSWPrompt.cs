@@ -21,7 +21,7 @@ public class TSWPrompt
     {
         this._setting = setting;
     }
-    public List<int> GetPrompt(List<TSWPuke> myPukes , List<TSWPuke> upPukes)
+    public List<int> GetPrompt(List<Puke> myPukes , List<Puke> upPukes)
     {
         if (upPukes == null || upPukes.Count == 0)
         {
@@ -39,7 +39,7 @@ public class TSWPrompt
         }
         return null;
     }
-	List<int> GetTractor(List<TSWPuke> myPukes, List<TSWPuke> upPukes)
+	List<int> GetTractor(List<Puke> myPukes, List<Puke> upPukes)
     {
 		return null;
     }
@@ -48,7 +48,7 @@ public class TSWPrompt
     /// </summary>
     /// <param name="upPukes"></param>
     /// <returns></returns>
-    public PlayCardType GetPukeType(List<TSWPuke> upPukes)
+    public PlayCardType GetPukeType(List<Puke> upPukes)
     {
         if (upPukes == null || upPukes.Count == 0)
         {
@@ -60,7 +60,9 @@ public class TSWPrompt
         }
         else if (upPukes.Count == 2)
         {
-            if (upPukes[0].CompleteSame(upPukes[1]))
+			TSWPuke first = upPukes [0] as TSWPuke;
+			TSWPuke second = upPukes [1] as TSWPuke;
+			if (first.CompleteSame(second))
             {
                 return PlayCardType.APair;
             }
@@ -88,14 +90,14 @@ public class TSWPrompt
     /// </summary>
     /// <param name="pukes"></param>
     /// <returns></returns>
-    bool JudgePukesIsTractor(List<TSWPuke> pukes)
+    bool JudgePukesIsTractor(List<Puke> pukes)
     {
         if (pukes.Count < 4) return false;
-        List<TSWPuke> four = pukes.GetRange(0, 4);
-        TSWPuke first = four[0];
-        TSWPuke second = four[1];
-        TSWPuke third = four[2];
-        TSWPuke fourth = four[3];
+        List<Puke> four = pukes.GetRange(0, 4);
+		TSWPuke first = four[0] as TSWPuke;
+		TSWPuke second = four[1] as TSWPuke;
+		TSWPuke third = four[2] as TSWPuke;
+		TSWPuke fourth = four[3] as TSWPuke;
         if (first.CompleteSame(second) && third.CompleteSame(fourth))//先判断两两是不是相同
         {
             return false;
@@ -111,7 +113,7 @@ public class TSWPrompt
                 return false;
             }
         }
-        List<TSWPuke> nextFour = pukes.GetRange(2, pukes.Count - 2);
+        List<Puke> nextFour = pukes.GetRange(2, pukes.Count - 2);
         if (nextFour.Count < 4)
         {
             return true;

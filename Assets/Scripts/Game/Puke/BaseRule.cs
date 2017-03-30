@@ -12,7 +12,7 @@ public abstract class BaseRule
 	/// </summary>
 	/// <returns><c>true</c>, if rule was complianced, <c>false</c> otherwise.</returns>
 	/// <param name="playingCards">Playing cards.</param>
-	public abstract bool ComplianceRule (List<Puke> playingCards);
+	public abstract bool ComplianceRule (Player first , List<Puke> playingCards);
 	/// <summary>
 	/// Playings the cards.
 	/// </summary>

@@ -5,7 +5,18 @@ using System.Text;
 public class TSWPuke : Puke
 {
     public int SizeNum;
-    public TSWPuke(int num, PukeColor pcolor) : base(num, pcolor)
+	private bool _isGod;
+	public bool IsGod
+	{
+		get{
+			return this._isGod;
+		}
+		set
+		{
+			this._isGod = value;
+		}
+	}
+	public TSWPuke(int num, PukeColor pcolor) : base(num, pcolor)
     {
 
     }
@@ -13,6 +24,15 @@ public class TSWPuke : Puke
     {
 
     }
+	/// <summary>
+	/// 都是主 或者花色相同
+	/// </summary>
+	/// <returns><c>true</c> if this instance is same type the specified puke; otherwise, <c>false</c>.</returns>
+	/// <param name="puke">Puke.</param>
+	public bool IsSameType(TSWPuke puke)
+	{
+		return true;
+	}
     public bool CompleteSame(TSWPuke tp)
     {
         return (this.IsSameNum(tp) && this.SameColor(tp));

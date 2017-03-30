@@ -8,9 +8,10 @@ public class Player
 	protected Player _upPlayer;
 	protected Player _nextPlayer;
 	protected List<Puke> _pukes;
-	public Player(int pos , Player upPlayer , Player nextPlayer)
+	protected Stack<PlayedCard> _playedPuke = new Stack<PlayedCard> ();
+	public Player(Player upPlayer , Player nextPlayer , List<Puke> pukes)
 	{
-		this._pos = pos;
+		this._pukes = pukes;
 		this._upPlayer = upPlayer;
 		this._nextPlayer = nextPlayer;
 	}
@@ -18,17 +19,20 @@ public class Player
 	{
 		return this._pos;
 	}
-	public void SetPukes(List<Puke> pukes)
-	{
-		
-	}
 	public List<Puke> GetPukes()
 	{
 		return this._pukes;
 	}
-	public void PlayPuke()
+	public void PlayPuke (PlayedCard pukes)
 	{
-		
+		this._playedPuke.Push (pukes);
+	}
+	/// <summary>
+	/// 获取打出去的牌
+	/// </summary>
+	public Stack<PlayedCard> GetPlayedPukes()
+	{
+		return _playedPuke;
 	}
 	public Player GetUpPlayer()
 	{
