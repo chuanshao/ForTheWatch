@@ -40,6 +40,7 @@ public class TSWPlayer : Player
 	}
 
 	public List<TSWPuke[]> GetPairByType(PukeColor col , bool isGod = false){
+		
 		return new List<TSWPuke[]> ();
 	}
 	/// <summary>
