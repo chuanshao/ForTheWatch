@@ -22,7 +22,7 @@ public class Game : MonoBehaviour
         get
         {
             if (_instance == null)
-                _instance = new GameObject("Game").AddComponent<Game>();
+				_instance = Singleton.Instance.AddComponent<Game>();
             return _instance;
         }
     }

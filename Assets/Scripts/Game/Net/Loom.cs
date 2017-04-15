@@ -38,8 +38,7 @@ public class Loom : MonoBehaviour
             if(!Application.isPlaying)  
                 return;  
             initialized = true;  
-            var g = new GameObject("Loom");  
-            _current = g.AddComponent<Loom>();  
+			_current = Singleton.Instance.AddComponent<Loom>();  
         }  
               
     }  

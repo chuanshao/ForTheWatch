@@ -82,7 +82,9 @@ public class SocketManager : MonoBehaviour{
                 {
                     if (_connectedCallBack != null)
                     {
-                        _connectedCallBack.Invoke();
+						Loom.QueueOnMainThread(delegate {
+							_connectedCallBack.Invoke();
+						});
                     }
                 });
             });
