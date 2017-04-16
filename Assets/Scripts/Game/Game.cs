@@ -46,7 +46,6 @@ public class Game : MonoBehaviour
         ///下面可以进行场景的资源加载
         _script.sceneBase.OnSceneLoadProcess(0f);
         GameObject cacheRes = GameObject.Find("cacheRes"); //需要预先缓存的数据
-
         _script.sceneBase.OnSceneLoadComplete();
         yield return null;
     }

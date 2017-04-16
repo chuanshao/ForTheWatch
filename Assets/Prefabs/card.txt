@@ -1,0 +1,1107 @@
+{
+  "plist": {
+    "-version": "1.0",
+    "dict": {
+      "key": [
+        "frames",
+        "metadata"
+      ],
+      "dict": [
+        {
+          "key": [
+            "card1",
+            "card10",
+            "card11",
+            "card12",
+            "card13",
+            "card14",
+            "card15",
+            "card16",
+            "card17",
+            "card18",
+            "card19",
+            "card2",
+            "card20",
+            "card21",
+            "card22",
+            "card23",
+            "card24",
+            "card25",
+            "card26",
+            "card27",
+            "card28",
+            "card29",
+            "card3",
+            "card30",
+            "card31",
+            "card32",
+            "card33",
+            "card34",
+            "card35",
+            "card36",
+            "card37",
+            "card38",
+            "card39",
+            "card4",
+            "card40",
+            "card41",
+            "card42",
+            "card43",
+            "card44",
+            "card45",
+            "card46",
+            "card47",
+            "card48",
+            "card49",
+            "card5",
+            "card50",
+            "card51",
+            "card52",
+            "card53",
+            "card54",
+            "card55",
+            "card56",
+            "card57",
+            "card58",
+            "card59",
+            "card6",
+            "card60",
+            "card61",
+            "card62",
+            "card63",
+            "card64",
+            "card65",
+            "card66",
+            "card67",
+            "card7",
+            "card8",
+            "card9"
+          ],
+          "dict": [
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{794,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{695,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{596,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,863},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,740},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,617},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,863},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,740},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{695,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,617},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{893,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{794,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{695,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{596,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{596,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,863},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,740},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,617},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{893,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{794,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{695,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{596,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,863},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,863},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,740},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,617},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,740},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{893,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{794,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{695,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{596,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{398,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{299,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{200,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{101,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,617},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,863},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,740},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,617},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,248},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,125},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{2,2},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{497,494},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{893,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            },
+            {
+              "key": [
+                "frame",
+                "offset",
+                "rotated",
+                "sourceColorRect",
+                "sourceSize"
+              ],
+              "string": [
+                "{{794,371},{97,121}}",
+                "{0,0}",
+                "{{0,0},{97,121}}",
+                "{97,121}"
+              ]
+            }
+          ]
+        },
+        {
+          "key": [
+            "format",
+            "realTextureFileName",
+            "size",
+            "smartupdate",
+            "textureFileName"
+          ],
+          "integer": "2",
+          "string": [
+            "cards.png",
+            "{1024,1024}",
+            "$TexturePacker:SmartUpdate:cb9f8077bb9b9ec78fd4105bfd7e5602$",
+            "cards.png"
+          ]
+        }
+      ]
+    }
+  }
+}

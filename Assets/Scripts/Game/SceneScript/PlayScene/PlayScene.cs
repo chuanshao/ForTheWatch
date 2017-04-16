@@ -6,7 +6,7 @@ public class PlayScene : SceneBase
 	public override void OnSceneLoadComplete ()
 	{
 		Ass.Instance.GetPrefab ("PlayUi", delegate(GameObject obj) {
-			
+			 
 		});
 	}
 	public override void OnSceneLoadProcess (float process)
