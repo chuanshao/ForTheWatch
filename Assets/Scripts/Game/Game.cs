@@ -10,24 +10,28 @@ using UnityEngine;
 /// </summary>
 public class Game : MonoBehaviour
 {
-    public SceneScript script
+    private SceneScript _script;
+
+    public static SceneScript script
     {
         get
         {
-            return _script;
+            return Game.Instance._script;
         }
     }
+    private static Game m_Instance;
     public static Game Instance
     {
         get
         {
-            if (_instance == null)
-				_instance = Singleton.Instance.AddComponent<Game>();
-            return _instance;
+            if (m_Instance == null)
+            {
+                m_Instance = Singleton.Instance.AddComponent<Game>();
+            }
+            return m_Instance;
         }
     }
-    private SceneScript _script;
-    private static Game _instance;
+
     /// <summary>
     /// 跳转到一个场景
     /// </summary>
@@ -36,18 +40,18 @@ public class Game : MonoBehaviour
     {
         SceneManager.LoadScene("EmptyScene");
         AsyncOperation op = SceneManager.LoadSceneAsync(sceneName);
-        while (op.isDone)
+        while (!op.isDone)
         {
             yield return null;
         }
         GameObject sceneScriptObject = GameObject.Find("sceneScript");
         InitSceneScript(sceneScriptObject);
-        _script.sceneBase.OnSceneLoadStart();//场景资源开始加载
+        script.sceneBase.OnSceneLoadStart();//场景资源开始加载
         ///下面可以进行场景的资源加载
-        _script.sceneBase.OnSceneLoadProcess(0f);
+        script.sceneBase.OnSceneLoadProcess(0f);
         GameObject cacheRes = GameObject.Find("cacheRes"); //需要预先缓存的数据
 
-        _script.sceneBase.OnSceneLoadComplete();
+        script.sceneBase.OnSceneLoadComplete();
         yield return null;
     }
     public void GoScene(string sceneName)

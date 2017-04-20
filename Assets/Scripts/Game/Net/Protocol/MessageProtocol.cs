@@ -25,7 +25,7 @@ public class MessageProtocol
 
         foreach (string key in keys)
         {
-            ushort value = Convert.ToUInt16(dict[key]);
+            ushort value = Convert.ToUInt16(dict.GetValue(key, "0"));
             this.dict[key] = value;
             this.abbrs[value] = key;
         }

@@ -24,7 +24,7 @@ public class MainScene : SceneBase{
         Ass.Instance.GetPrefab("ui/MainPanel", delegate (GameObject go) 
         {
             GuiBase gui = go.GetComponent<GuiBase>();
-            Game.Instance.script.uiCanvas.OpenGui(gui);
+            Game.script.uiCanvas.OpenGui(gui);
         });
     }
 }

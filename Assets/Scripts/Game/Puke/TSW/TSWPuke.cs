@@ -24,14 +24,21 @@ public class TSWPuke : Puke
     {
 
     }
-	/// <summary>
-	/// 都是主 或者花色相同
-	/// </summary>
-	/// <returns><c>true</c> if this instance is same type the specified puke; otherwise, <c>false</c>.</returns>
-	/// <param name="puke">Puke.</param>
-	public bool IsSameType(TSWPuke puke)
+    /// <summary>
+    /// 都是主 或者花色相同
+    /// </summary>
+    /// <returns><c>true</c> if this instance is same type the specified puke; otherwise, <c>false</c>.</returns>
+    /// <param name="poke">Puke.</param>
+    public bool IsSameType(TSWPuke poke)
 	{
-		return true;
+        if (this.SameColor(poke))
+        {
+            return true;
+        }
+        if (poke.IsGod && this.IsGod) {
+            return true;
+        }
+		return false;
 	}
     public bool CompleteSame(TSWPuke tp)
     {
@@ -45,6 +52,6 @@ public class TSWPuke : Puke
     /// <returns></returns>
     public static int operator -(TSWPuke o1, TSWPuke o2)
     {
-        return 0;
+        return o1.PukeNum - o2.PukeNum;
     }
 }
