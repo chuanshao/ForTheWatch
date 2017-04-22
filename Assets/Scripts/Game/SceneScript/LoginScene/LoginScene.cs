@@ -18,11 +18,13 @@ class LoginScene : SceneBase
     /// </summary>
     public override void OnSceneLoadComplete()
     {
-        Ass.Instance.GetPrefab("ui/LoginPanel", delegate (GameObject go)
+        SocketManager.Instance.StartService("127.0.0.1", 3014, delegate ()
         {
-            GameObject mainPanelGo = GameObject.Instantiate(go);
-            GuiBase mainPanel = mainPanelGo.GetComponent<GuiBase>();
-            Game.Instance.script.uiCanvas.OpenGui(mainPanel);
+            Ass.Instance.GetPrefab("login/test", delegate (GameObject go)
+            {
+                var panel = GameObject.Instantiate(go);
+                Game.script.uiCanvas.OpenGui(panel.GetComponent<GuiBase>());
+            });
         });
     }
 }

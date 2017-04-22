@@ -14,6 +14,7 @@ public class GameInit : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
+        var loom = Loom.Current;
         Game.Instance.GoScene("Login");
         //SocketManager.Instance.StartService("127.0.0.1", 3014, () =>
         //{

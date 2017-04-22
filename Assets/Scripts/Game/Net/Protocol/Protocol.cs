@@ -106,7 +106,7 @@ public class Protocol
 
         //Init heartbeat service
         int interval = 0;
-        if (sys.Keys.Contains("heartbeat")) interval = Convert.ToInt32(sys["heartbeat"]);
+        if (sys.Keys.Contains("heartbeat")) interval = Convert.ToInt32(sys.GetValue("heartbeat", 30));
         _heartBeatService = new HeartBeatService(interval , this);
         if (interval > 0)
         {

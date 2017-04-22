@@ -65,7 +65,6 @@ public class TSWPlayCardRule
 				return false;
 			}
 		}
-		return false;
 	}
 	/// <summary>
 	/// 是否符合一对
