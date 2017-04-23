@@ -20,7 +20,7 @@ class LoginScene : SceneBase
     {
         SocketManager.Instance.StartService("127.0.0.1", 3014, delegate ()
         {
-            Ass.Instance.GetPrefab("login/test", delegate (GameObject go)
+            Ass.Instance.GetPrefab("ui/LoginPanel", delegate (GameObject go)
             {
                 var panel = GameObject.Instantiate(go);
                 Game.script.uiCanvas.OpenGui(panel.GetComponent<GuiBase>());

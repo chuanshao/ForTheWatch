@@ -16,16 +16,7 @@ public class GameInit : MonoBehaviour
     {
         var loom = Loom.Current;
         Game.Instance.GoScene("Login");
-        //SocketManager.Instance.StartService("127.0.0.1", 3014, () =>
-        //{
-        //    JsonData userLogin = new JsonData();
-        //    userLogin["account"] = "jichang9527";
-        //    userLogin["passwd"] = "huangge9527";
-        //    SocketManager.Instance.Request("connector.entryHandler.login", userLogin, delegate (JsonData userInfo)//请求登陆
-        //    {
 
-        //    });
-        //});
     }
 	
 	// Update is called once per frame

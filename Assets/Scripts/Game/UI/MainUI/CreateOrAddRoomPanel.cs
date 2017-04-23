@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-public class CreateOrAddRoomPanel : MonoBehaviour
+public class CreateOrAddRoomPanel : BaseWindow
 {
     public Button CreateRoom;
     public Button AddButton;

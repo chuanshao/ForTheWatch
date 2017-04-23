@@ -2,7 +2,7 @@
 
 public class MainModel
 {
-    public UserData User;
+    public UserData User = new UserData();
 
     private static MainModel _instance;
     public static MainModel Instance {

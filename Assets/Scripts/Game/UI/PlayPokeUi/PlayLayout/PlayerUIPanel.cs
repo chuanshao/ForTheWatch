@@ -8,7 +8,8 @@ public class PlayerUIPanel : MonoBehaviour
     public UserHead Right;
     public UserHead Up;
     public UserHead Down;
-    public PlayerUIPanel() {
+    private void Awake() {
+        Down.gameObject.SetActive(true);
         Down.SetHeadUrl(MainModel.Instance.User.PicUrl);
     }
     public void AddUser(UserData user) {

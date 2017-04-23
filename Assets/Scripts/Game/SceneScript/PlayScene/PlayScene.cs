@@ -5,17 +5,18 @@ public class PlayScene : SceneBase
 {
 	public override void OnSceneLoadComplete ()
 	{
-		Ass.Instance.GetPrefab ("PlayUi", delegate(GameObject obj) {
-			 
-		});
+		Ass.Instance.GetPrefab ("ui/CreateOrAddWindow", delegate(GameObject go) {
+            GameObject iGo = GameObject.Instantiate(go);
+            Game.script.uiCanvas.OpenGui(iGo.GetComponent<GuiBase>());
+        });
 	}
 	public override void OnSceneLoadProcess (float process)
 	{
-		throw new System.NotImplementedException ();
+
 	}
 	public override void OnSceneLoadStart ()
 	{
-		throw new System.NotImplementedException ();
+
 	}
 	// Use this for initialization
 	void Start ()
