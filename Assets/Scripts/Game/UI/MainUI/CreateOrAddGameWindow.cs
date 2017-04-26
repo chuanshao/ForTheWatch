@@ -13,7 +13,7 @@ public class CreateOrAddGameWindow : BaseWindow
         CloseBtn.onClick.AddListener(OnCloseClick);
     }
     void OnCreateGameClick() {
-        SocketManager.Instance.Request("game.handler.createGame", OnCreateGameBack);
+        SocketManager.Instance.Request("game.gameHandler.createGame", OnCreateGameBack);
     }
     void OnCloseClick() {
 
@@ -30,6 +30,7 @@ public class CreateOrAddGameWindow : BaseWindow
     /// </summary>
     /// <param name="jdata"></param>
     void OnCreateGameBack(JsonData jdata) {
+        Debug.Log(JsonMapper.ToJson(jdata));
         Ass.Instance.GetPrefab("ui/PlaySceneUI", delegate (GameObject go)//进入游戏
         {
             GameObject iGo = GameObject.Instantiate(go);

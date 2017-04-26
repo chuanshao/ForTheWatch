@@ -40,10 +40,10 @@ public class FightScene : BaseWindow
         });
     }
     void BeReady() {
-        SocketManager.Instance.Request("game.gameHandler.ready", delegate (JsonData data)
-        {
+        //SocketManager.Instance.Request("game.gameHandler.ready", delegate (JsonData data)
+        //{
 
-        });
+        //});
     }
     // Update is called once per frame
     void Update()
