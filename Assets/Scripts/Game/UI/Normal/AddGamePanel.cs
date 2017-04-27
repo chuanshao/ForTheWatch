@@ -32,10 +32,13 @@ public class AddGamePanel : BaseWindow
         }
     }
     void OnAddGameCallBack(JsonData jdata) {
-        Debug.Log(JsonMapper.ToJson(jdata));
         Ass.Instance.GetPrefab("ui/PlaySceneUI", delegate (GameObject go)//进入游戏
         {
             GameObject iGo = GameObject.Instantiate(go);
+            FightScene fs = iGo.GetComponent<FightScene>();
+            PlayFrameData playFramData = new PlayFrameData();
+            playFramData.ParseJson(jdata);
+            fs.Init(playFramData);
             Game.script.uiCanvas.OpenGui(iGo.GetComponent<GuiBase>());
         });
     }

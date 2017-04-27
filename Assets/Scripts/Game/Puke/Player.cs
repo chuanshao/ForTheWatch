@@ -1,21 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using LitJson;
 
-public class Player
+public class Player : WData
 {
-    protected string _headUrl;
+    protected UserData _userData;
 	protected int _pos;
 	protected Player _upPlayer;
 	protected Player _nextPlayer;
 	protected List<Puke> _pukes;
 	protected Stack<PlayedCard> _playedPuke = new Stack<PlayedCard> ();
-	public Player(Player upPlayer , Player nextPlayer , List<Puke> pukes)
+	public Player()
 	{
-		this._pukes = pukes;
-		this._upPlayer = upPlayer;
-		this._nextPlayer = nextPlayer;
+
 	}
+    public UserData UData
+    {
+        get {
+            return _userData;
+        }
+        set {
+            _userData = value;
+        }
+    }
 	public int GetPos()
 	{
 		return this._pos;
@@ -28,10 +36,14 @@ public class Player
 	{
 		this._playedPuke.Push (pukes);
 	}
-	/// <summary>
-	/// 获取打出去的牌
-	/// </summary>
-	public Stack<PlayedCard> GetPlayedPukes()
+    public override void ParseJson(JsonData jdata)
+    {
+
+    }
+    /// <summary>
+    /// 获取打出去的牌
+    /// </summary>
+    public Stack<PlayedCard> GetPlayedPukes()
 	{
 		return _playedPuke;
 	}

@@ -12,8 +12,8 @@ public class PlayerUIPanel : MonoBehaviour
         Down.gameObject.SetActive(true);
         Down.SetHeadUrl(MainModel.Instance.User.PicUrl);
     }
-    public void AddUser(UserData user) {
-        var userHead = GetUserHeadByOtherPos(user.Pos);
+    public void AddPlayer(Player player) {
+        var userHead = GetUserHeadByOtherPos(player.GetPos());
         userHead.gameObject.SetActive(true);
     }
     public void UserLeave(int pos) {

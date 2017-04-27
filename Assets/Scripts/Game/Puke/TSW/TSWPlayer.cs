@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class TSWPlayer : Player
 {
 	private TSWSetting _setting;
-	public TSWPlayer(List<Puke> pukes , TSWSetting setting , TSWPlayer upPlayer , TSWPlayer nextPlayer) : base(upPlayer , nextPlayer , pukes)
+	public TSWPlayer(List<Puke> pukes , TSWSetting setting , TSWPlayer upPlayer , TSWPlayer nextPlayer) : base()
 	{
 		this._setting = setting;
 	}

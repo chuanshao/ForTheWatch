@@ -8,7 +8,7 @@ public class FightScene : BaseWindow
     private string PlayerExit = "onPlayerExit";
     private string SendPokes = "onSendPokes";
     private string DealingCardOver = "dealingCardOver";
-    private Dictionary<string, UserData> _users = new Dictionary<string, UserData>();
+    private PlayFrameData PlayFrame;
     public PlayerUIPanel PlayerPanel;
     private void Awake()
     {
@@ -19,15 +19,14 @@ public class FightScene : BaseWindow
     {
         BeReady();
     }
-    public void Init(WData totleDatas) {
-
+    public void Init(PlayFrameData frameData) {
+        PlayFrame = frameData;
+        InitPlayer();
     }
     void OnRegiest() {
         SocketManager.Instance.On(PlayerEnter, delegate (JsonData jdata) { //新玩家进入
-            Debug.Log(JsonMapper.ToJson(jdata));
-            UserData user = new UserData();
-            user.ParseJson(jdata);
-            AddUser(user);
+            Player player = new Player();
+            AddPlayer(player);
         });
         SocketManager.Instance.On(PlayerExit, delegate (JsonData jdata) {//玩家离开
             PlayerPanel.UserLeave(jdata.GetValue("pos" , -1));
@@ -39,9 +38,29 @@ public class FightScene : BaseWindow
             Debug.Log(JsonMapper.ToJson(jdata));
         });
     }
-    void AddUser(UserData udata) {
-        _users.Add(user.UserUid, user);
-        PlayerPanel.AddUser(user);
+    void InitPlayer() {
+        var players = PlayFrame.Players;
+        for (int i = 0; i < players.Count; i++)
+        {
+            var Player = players[i];
+            AddPlayer(Player);
+        }
+    }
+    //玩家加入
+    void AddPlayer(Player player) {
+        var players = PlayFrame.Players;
+        players.Add(player);
+        PlayerPanel.AddPlayer(player);
+    }
+    /// <summary>
+    /// 删除玩家
+    /// </summary>
+    void DeletePlayer() {
+
+    }
+
+    void PlayerDrop() {
+
     }
     void BeReady() {
         SocketManager.Instance.Request("game.gameHandler.ready", delegate (JsonData data)
