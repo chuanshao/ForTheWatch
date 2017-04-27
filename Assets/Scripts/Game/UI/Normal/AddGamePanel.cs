@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
+using LitJson;
+
 public class AddGamePanel : BaseWindow
 {
     public InputNumberComponent INC;
@@ -22,8 +24,20 @@ public class AddGamePanel : BaseWindow
     }
 
     void OnNumber(string num) {
-        if (RoomId.text.Length >= 6) RoomId.text = "";
         RoomId.text += num;
+        if (RoomId.text.Length >= 6) {
+            RoomId.text = "";
+            SocketManager.Instance.Request("game.gameHandler.addGame", OnAddGameCallBack);
+            return;
+        }
+    }
+    void OnAddGameCallBack(JsonData jdata) {
+        Debug.Log(JsonMapper.ToJson(jdata));
+        Ass.Instance.GetPrefab("ui/PlaySceneUI", delegate (GameObject go)//进入游戏
+        {
+            GameObject iGo = GameObject.Instantiate(go);
+            Game.script.uiCanvas.OpenGui(iGo.GetComponent<GuiBase>());
+        });
     }
     void OnDelete() {
         var length = RoomId.text.Length;

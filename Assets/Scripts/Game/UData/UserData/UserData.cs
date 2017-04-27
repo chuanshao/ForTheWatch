@@ -10,6 +10,7 @@ public class UserData : WData
     public string Name;
     public override void ParseJson(JsonData jdata)
     {
-
+        this.UserUid = jdata.GetValue("userId", "");
+        this.Pos = jdata.GetValue("pos", 0);
     }
 }

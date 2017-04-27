@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Player
 {
+    protected string _headUrl;
 	protected int _pos;
 	protected Player _upPlayer;
 	protected Player _nextPlayer;
