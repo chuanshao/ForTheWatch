@@ -21,6 +21,7 @@ public class FightScene : BaseWindow
     }
     public void Init(PlayFrameData frameData) {
         PlayFrame = frameData;
+		PlayerPanel.Init (PlayFrame.GetMine ());
         InitPlayer();
     }
     void OnRegiest() {
@@ -40,11 +41,7 @@ public class FightScene : BaseWindow
     }
     void InitPlayer() {
         var players = PlayFrame.Players;
-        for (int i = 0; i < players.Count; i++)
-        {
-            var Player = players[i];
-            AddPlayer(Player);
-        }
+		PlayerPanel.AddPlayer (players);
     }
     //玩家加入
     void AddPlayer(Player player) {
@@ -52,10 +49,16 @@ public class FightScene : BaseWindow
         players.Add(player);
         PlayerPanel.AddPlayer(player);
     }
+	/// <summary>
+	/// 发牌
+	/// </summary>
+	void DealingCard(){
+		
+	}
     /// <summary>
     /// 删除玩家
     /// </summary>
-    void DeletePlayer() {
+	void DeletePlayer() {
 
     }
 
@@ -65,7 +68,7 @@ public class FightScene : BaseWindow
     void BeReady() {
         SocketManager.Instance.Request("game.gameHandler.ready", delegate (JsonData data)
         {
-
+		
         });
     }
     // Update is called once per frame

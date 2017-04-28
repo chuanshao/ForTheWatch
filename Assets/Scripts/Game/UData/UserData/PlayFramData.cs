@@ -29,4 +29,7 @@ public class PlayFrameData : WData
             Players.Add(player);
         }
     }
+	public Player GetMine(){
+		return null;
+	}
 }

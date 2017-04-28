@@ -7,6 +7,7 @@ public class Player : WData
 {
     protected UserData _userData;
 	protected int _pos;
+	protected string _picUrl;
 	protected Player _upPlayer;
 	protected Player _nextPlayer;
 	protected List<Puke> _pukes;
@@ -24,6 +25,10 @@ public class Player : WData
             _userData = value;
         }
     }
+	public string PicUrl()
+	{
+		return this._picUrl;
+	}
 	public int GetPos()
 	{
 		return this._pos;
