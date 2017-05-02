@@ -11,9 +11,17 @@ public class WData
     public virtual void ParseJson(LitJson.JsonData jdata) {
 
     }
-    public object this[int i]{
+    public void Add(WData wd) {
+        _listData.Add(wd);
+    }
+    public WData this[int i]{
         get {
             return this._listData[i];
+        }
+    }
+    public int Length {
+        get {
+            return this._listData.Count;
         }
     }
     public object this[string key]
