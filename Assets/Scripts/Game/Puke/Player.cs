@@ -5,7 +5,7 @@ using LitJson;
 
 public class Player : WData
 {
-    protected UserData _userData;
+    protected string _uid;
 	protected int _pos;
 	protected string _picUrl;
 	protected Player _upPlayer;
@@ -16,13 +16,13 @@ public class Player : WData
 	{
 
 	}
-    public UserData UData
+    public string UID
     {
         get {
-            return _userData;
+            return _uid;
         }
         set {
-            _userData = value;
+            _uid = value;
         }
     }
 	public string PicUrl()
@@ -43,7 +43,8 @@ public class Player : WData
 	}
     public override void ParseJson(JsonData jdata)
     {
-
+        this._pos = jdata.GetValue("pos", 0);
+        this._uid = jdata.GetValue("uid", "");
     }
     /// <summary>
     /// 获取打出去的牌

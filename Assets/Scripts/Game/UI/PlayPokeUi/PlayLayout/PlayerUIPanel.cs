@@ -43,7 +43,7 @@ public class PlayerUIPanel : MonoBehaviour
 	void FindMine(List<Player> players){
 		for (int i = 0; i < players.Count; i++) {
 			var player = players [i];
-			if (player.UData.UserUid == MainModel.Instance.User.UserUid) {
+			if (player.UID == MainModel.Instance.User.UserUid) {
 				_mine = player;
 				return;
 			}

@@ -31,7 +31,12 @@ public class AddGamePanel : BaseWindow
             return;
         }
     }
+
     void OnAddGameCallBack(JsonData jdata) {
+        if (jdata.GetValue("code", "") != string.Empty) {
+            return;
+        }
+        Debug.Log(JsonMapper.ToJson(jdata));
         Ass.Instance.GetPrefab("ui/PlaySceneUI", delegate (GameObject go)//进入游戏
         {
             GameObject iGo = GameObject.Instantiate(go);
