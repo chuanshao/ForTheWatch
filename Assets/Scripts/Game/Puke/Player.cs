@@ -14,7 +14,7 @@ public class Player : WData
 	protected Stack<PlayedCard> _playedPuke = new Stack<PlayedCard> ();
 	public Player()
 	{
-
+        
 	}
     public string UID
     {

@@ -9,26 +9,30 @@ public class TestApi : MonoBehaviour {
     public GameObject mainPanel;
     private void Awake()
     {
-       //Ass.Instance.GetPrefab("Panel", delegate (GameObject go)
-       //{
-       //     mainPanel = GameObject.Instantiate(go);
-       //});
+        var g1 = GameObject.Instantiate(mainPanel);
+        var g2 = GameObject.Instantiate(mainPanel);
+        Debug.Log("g0" + mainPanel.GetInstanceID());
+        Debug.Log("g1" + g1.GetInstanceID());
+        Debug.Log("g2" + g2.GetInstanceID());
+        //Ass.Instance.GetPrefab("Panel", delegate (GameObject go)
+        //{
+        //     mainPanel = GameObject.Instantiate(go);
+        //});
     }
     // Use this for initialization
     void Start ()
     {
-        TTT();
+        //TTT();
     }
     static void TTT()
     {
         var url = "http://img.cyol.com/img/news/attachement/jpg/site2/20170327/IMG484d7ea271d544057911920.jpg";
         var len = GetHttpLength(url);
-        Debug.Log(len);
     }
 
     static long GetHttpLength(string url)
     {
-        var length = 0l;
+        var length = (long)0;
         try
         {
             var req = (HttpWebRequest)WebRequest.CreateDefault(new Uri(url));
